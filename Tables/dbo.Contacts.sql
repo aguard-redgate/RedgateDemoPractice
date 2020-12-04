@@ -10,7 +10,8 @@ CREATE TABLE [dbo].[Contacts]
 [JoiningDate] [datetime] NULL CONSTRAINT [DF__Contacts__Joinin__2A4B4B5E] DEFAULT (getdate()),
 [Email] [nvarchar] (256) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
 [SocialSecurity] [int] NULL,
-[TwitterId] [nvarchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
+[TwitterId] [nvarchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[SocialId] [nvarchar] (20) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
 ) ON [PRIMARY]
 GO
 ALTER TABLE [dbo].[Contacts] ADD CONSTRAINT [PK_Contacts] PRIMARY KEY CLUSTERED  ([ID]) ON [PRIMARY]
