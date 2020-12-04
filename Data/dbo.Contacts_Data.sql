@@ -1,4 +1,7 @@
 SET IDENTITY_INSERT [dbo].[Contacts] ON
+INSERT INTO [dbo].[Contacts] ([ID], [Name], [PhoneWork], [PhoneMobile], [Address1], [Address2], [Address3], [JoiningDate], [Email], [SocialSecurity], [TwitterId], [SocialId]) VALUES (103, N'foo', N'456546', N'456456', N'address', N'324', N'345', '2020-12-04 13:27:13.153', N'foo@email.com', 0, N'frdgdfg', NULL)
+SET IDENTITY_INSERT [dbo].[Contacts] OFF
+SET IDENTITY_INSERT [dbo].[Contacts] ON
 INSERT INTO [dbo].[Contacts] ([ID], [Name], [PhoneWork], [PhoneMobile], [Address1], [Address2], [Address3], [JoiningDate], [Email], [SocialSecurity], [TwitterId], [SocialId]) VALUES (1, N'Christopher Martin', N'01446 175923', N'07634 717173', N'17 High Street', N'Darlington', N'Cheshire', '2007-09-14 16:09:21.383', N'Christopher.Martin@example.com', NULL, NULL, NULL)
 INSERT INTO [dbo].[Contacts] ([ID], [Name], [PhoneWork], [PhoneMobile], [Address1], [Address2], [Address3], [JoiningDate], [Email], [SocialSecurity], [TwitterId], [SocialId]) VALUES (2, N'Joseph Bennett', N'01147 771824', N'07956 758471', N'37 Green Lane', N'Portsmouth', N'County Durham', '2007-09-14 16:09:21.400', N'Joseph.Bennett@example.com', NULL, NULL, NULL)
 INSERT INTO [dbo].[Contacts] ([ID], [Name], [PhoneWork], [PhoneMobile], [Address1], [Address2], [Address3], [JoiningDate], [Email], [SocialSecurity], [TwitterId], [SocialId]) VALUES (3, N'Joshua Scott', N'01940 919059', N'07331 757163', N'33 George Street', N'Llandudno', N'County Durham', '2007-09-14 16:09:21.400', N'Joshua.Scott@example.com', NULL, NULL, NULL)
